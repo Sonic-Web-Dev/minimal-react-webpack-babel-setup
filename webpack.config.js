@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    './src/index.js'
+    './example/index.js',
   ],
   module: {
     rules: [
@@ -27,6 +27,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
   }
 };
